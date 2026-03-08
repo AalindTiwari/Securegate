@@ -1,0 +1,20 @@
+services:
+  app:
+    image: node:22-alpine
+    working_dir: /workspace
+    command: sh -c "npm install && npm run dev -- --hostname 0.0.0.0"
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: development
+      SUPABASE_INTERNAL_URL: ${SUPABASE_INTERNAL_URL:-http://host.docker.internal:54321}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - .:/workspace
+      - securegate_node_modules:/workspace/node_modules
+
+volumes:
+  securegate_node_modules:

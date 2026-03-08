@@ -1,0 +1,31 @@
+project_id = "securegate-local"
+
+[functions.create-connection]
+verify_jwt = false
+
+[functions.delete-connection]
+verify_jwt = false
+
+[functions.delete-key]
+verify_jwt = false
+
+[functions.generate-key]
+verify_jwt = false
+
+[functions.get-audit-logs]
+verify_jwt = false
+
+[functions.get-connection]
+verify_jwt = false
+
+[functions.list-connections]
+verify_jwt = false
+
+[functions.proxy]
+verify_jwt = false
+
+[functions.run-custom-code]
+verify_jwt = false
+
+[functions.update-key]
+verify_jwt = false

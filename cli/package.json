@@ -1,0 +1,36 @@
+{
+    "name": "securegate-cli-tool",
+    "version": "2.4.2",
+    "description": "SecureGate CLI — Secure your AI agent API keys from the terminal",
+    "main": "src/index.js",
+    "bin": {
+        "securegate": "src/index.js"
+    },
+    "scripts": {
+        "start": "node src/index.js",
+        "test": "node src/index.js --help",
+        "postinstall": "node scripts/postinstall.js"
+    },
+    "keywords": [
+        "api-security",
+        "openai",
+        "anthropic",
+        "ai-agent",
+        "security-key",
+        "device-lock",
+        "cli"
+    ],
+    "author": "SecureGate",
+    "license": "MIT",
+    "engines": {
+        "node": ">=16"
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.97.0",
+        "chalk": "^4.1.2",
+        "commander": "^12.1.0",
+        "inquirer": "^8.2.6",
+        "open": "^11.0.0",
+        "ora": "^5.4.1"
+    }
+}
