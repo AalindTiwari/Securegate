@@ -50,5 +50,5 @@ Follow this **exact sequence** to secure your API access.
 
 To use your secure key, simply replace your raw provider key with the `SG_...` key and change the `baseURL`.
 
-*   **Docs:** `/docs`
+*   **Docs:** See the repository `README.md` and `docs/` folder.
 *   **Base URL:** `http://localhost:3000/v1` (replace with your deployed SecureGate URL)

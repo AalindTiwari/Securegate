@@ -218,11 +218,6 @@ export const SignUpPage: React.FC<SignUpPageProps> = ({
                                         <p className="text-xs text-muted-foreground mt-1.5">Must be at least 8 characters</p>
                                     </div>
 
-                                    <div className="animate-element animate-delay-600 flex items-start gap-2.5">
-                                        <input type="checkbox" name="terms" className="w-4 h-4 rounded border-border bg-secondary accent-accent mt-0.5" required />
-                                        <span className="text-sm text-muted-foreground">I agree to the <Link href="/legal/terms" className="text-accent hover:underline">Terms</Link> and <Link href="/legal/privacy" className="text-accent hover:underline">Privacy Policy</Link></span>
-                                    </div>
-
                                     <button type="submit" className="animate-element animate-delay-700 w-full rounded-xl bg-primary py-3.5 font-medium text-primary-foreground hover:bg-primary/90 transition-colors">
                                         Create Account
                                     </button>

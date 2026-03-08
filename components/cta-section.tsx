@@ -33,13 +33,13 @@ export function CTASection() {
             <Link href="/sign-up">
               <Button size="lg" className="w-full sm:w-auto">
                 <Shield className="mr-2 h-4 w-4" />
-                Start securing free
+                Start with auth
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-            <Link href="/docs#self-hosting">
+            <Link href="/sign-in">
               <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent">
-                Self-hosting guide
+                Sign in to dashboard
               </Button>
             </Link>
           </div>

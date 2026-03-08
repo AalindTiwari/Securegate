@@ -33,7 +33,6 @@ import {
     Code2,
     Variable,
     Terminal,
-    ExternalLink,
 } from 'lucide-react'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { IntegrationGuide } from '@/components/integration-guide'
@@ -811,9 +810,6 @@ export default function ConnectionDetailPage() {
                                                                         <p className="text-xs text-muted-foreground leading-relaxed">
                                                                             Automatically locks this key to the IP address of its very first request. Any requests from a different IP using this key will be instantly blocked.
                                                                         </p>
-                                                                        <Link href="/docs#security-locks" className="inline-flex items-center gap-1 text-xs text-accent hover:text-accent/80 font-medium transition-colors">
-                                                                            Learn how to configure <ExternalLink className="w-3 h-3" />
-                                                                        </Link>
                                                                     </div>
                                                                 </TooltipContent>
                                                             </Tooltip>
@@ -841,9 +837,6 @@ export default function ConnectionDetailPage() {
                                                                         <p className="text-xs text-muted-foreground leading-relaxed">
                                                                             Restricts this key so it can only be used from a specific city, preventing unauthorized API usage.
                                                                         </p>
-                                                                        <Link href="/docs#security-locks" className="inline-flex items-center gap-1 text-xs text-accent hover:text-accent/80 font-medium transition-colors">
-                                                                            Learn how to configure <ExternalLink className="w-3 h-3" />
-                                                                        </Link>
                                                                     </div>
                                                                 </TooltipContent>
                                                             </Tooltip>
@@ -869,9 +862,6 @@ export default function ConnectionDetailPage() {
                                                                         <p className="text-xs text-muted-foreground leading-relaxed">
                                                                             {key.device_hash ? 'Verification requires the `x-device-fingerprint` header obtained via `securegate env`.' : 'Bind via `securegate keys bind-device`. Then include the fingerprint header found in `securegate env`.'}
                                                                         </p>
-                                                                        <Link href="/docs#security-locks" className="inline-flex items-center gap-1 text-xs text-accent hover:text-accent/80 font-medium transition-colors">
-                                                                            Learn how to configure <ExternalLink className="w-3 h-3" />
-                                                                        </Link>
                                                                     </div>
                                                                 </TooltipContent>
                                                             </Tooltip>
@@ -897,9 +887,6 @@ export default function ConnectionDetailPage() {
                                                                         <p className="text-xs text-muted-foreground leading-relaxed">
                                                                             Restricts which specific models (e.g. gpt-4o-mini) can be called with this key. This prevents users from spamming expensive models with a leaked key.
                                                                         </p>
-                                                                        <Link href="/docs#security-locks" className="inline-flex items-center gap-1 text-xs text-accent hover:text-accent/80 font-medium transition-colors">
-                                                                            Learn how to configure <ExternalLink className="w-3 h-3" />
-                                                                        </Link>
                                                                     </div>
                                                                 </TooltipContent>
                                                             </Tooltip>

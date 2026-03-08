@@ -19,7 +19,6 @@ import {
     AlertCircle,
     Loader2,
     Search,
-    ExternalLink,
     Globe,
     Sparkles,
     Plug,
@@ -850,19 +849,6 @@ function ProviderCard({
                         <p className="text-xs text-muted-foreground line-clamp-1">
                             {provider.description}
                         </p>
-                        {provider.docsUrl && (
-                            <a
-                                href={provider.docsUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={(e) => {
-                                    e.stopPropagation()
-                                }}
-                                className="inline-flex items-center gap-1 text-[10px] text-muted-foreground hover:text-accent cursor-pointer z-10 shrink-0"
-                            >
-                                Docs <ExternalLink className="w-2.5 h-2.5" />
-                            </a>
-                        )}
                     </div>
                 </div>
             </div>

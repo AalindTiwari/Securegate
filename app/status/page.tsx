@@ -213,11 +213,11 @@ export default function StatusPage() {
                 {/* Footer */}
                 <div className="border-t border-border pt-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-sm text-muted-foreground">
-                        © {new Date().getFullYear()} SecureGate. All rights reserved.
+                        SecureGate contributors. MIT licensed.
                     </p>
                     <div className="flex items-center gap-4 text-sm font-medium">
-                        <Link href="/docs" className="text-muted-foreground hover:text-foreground">Documentation</Link>
-                        <Link href="/docs#self-hosting" className="text-muted-foreground hover:text-foreground">Self-hosting</Link>
+                        <Link href="/" className="text-muted-foreground hover:text-foreground">Home</Link>
+                        <Link href="/sign-in" className="text-muted-foreground hover:text-foreground">Sign in</Link>
                     </div>
                 </div>
             </main>

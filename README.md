@@ -54,6 +54,10 @@ Most AI apps still ship raw provider keys into agent runtimes, browser code, or 
 - `SUPABASE_INTERNAL_URL` exists so the app container can reach your local Supabase API while the browser still uses `NEXT_PUBLIC_SUPABASE_URL`.
 - The repository no longer contains any deployment-specific Supabase URLs, anon keys, service role keys, or committed `.env` values.
 
+## Documentation
+
+Public, GitHub-friendly documentation lives in [`docs/README.md`](./docs/README.md). Use that index to navigate the usage guide, API notes, SDK notes, and CLI setup without relying on an in-app docs route.
+
 ## CLI
 
 The CLI in [`cli/README.md`](./cli/README.md) is optional. Point it at your deployment with the `SECUREGATE_*` variables from `.env.example`.
